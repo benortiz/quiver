@@ -1,6 +1,6 @@
 module Quiver
   class Note
-    attr_accessor :meta, :path, :notebook
+    attr_accessor :meta, :path, :notebook, :adapter
     def initialize(content: , meta: , path: nil, notebook: nil)
       @content = content
       @meta = meta

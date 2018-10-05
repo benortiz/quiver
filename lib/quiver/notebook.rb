@@ -1,6 +1,6 @@
 module Quiver
   class Notebook
-    attr_reader :meta, :path, :root
+    attr_reader :meta, :path, :root, :adapter
     def initialize(meta:, path: nil, root: nil)
       @meta = meta
       @path = Pathname.new(path) if path
